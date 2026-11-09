@@ -1,7 +1,11 @@
-const botão = document.querySelector("#botaoMostrar");
-const retorno = document.querySelector("#retorno");
+const botaoCriar = document.getElementById("botaoCriar");
+const botaoApagar = Document.getElementById("botaotApagar");
+const retorno = document.getElementById("retorno");
 
-botao.addEventListener("click", function(){
+botaoCriar.addEventListener("click", () => {
+    retorno.textContent = "Hoje é um otimo dia para aprender JS!";
+});
 
-    retorno.textContent = "Voce clicou no botão!";
-})
+botaoApagar.addEventListener("click", () => {
+    retorno.textContent = "";
+});
