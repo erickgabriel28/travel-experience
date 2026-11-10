@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botao com JavaScript</title>
+    <title>Calculo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
  
-    <main class="container">
-        <h1>Personalizor de textos</h1>
+    <h2>Calculo</h2>
 
-        <form action="formEstilos">
-            <label for="campocor">Cor (cor ou hex)</label><br><br>
-            <input type="text" id="campocor" placeholder="ex:> red ou #ff0000"><br><br>
+    <form id="formCalculo">
+        <label for="numero1">Primeiro numero:</label><br><br>
+        <input type="number" id="numero1" placeholder="Ex: 10"><br><br>
+        <label for="numero2">Segundo numero:</label><br><br>
+        <input type="number" id="numero2" placeholder="Ex: 10"><br><br>
+        <button type="submit">Somar</button>
+    </form>
+   
+    <p id="resultadoCalculo"></p>
 
-            <label for="campoPadding">Padding (px0)</label><br><br>
-            <input type="number" id="campoPadding" placeholder="ex: 10"><br><br>
-
-            <label for="campoTamanho">Tamanho da letra (px):</label><br><br>
-            <input type="number" id="campoTamanho" placeholder="ex: 20"><br><br>
-            <button type="submit">Aplicar</button>
-        </form>
-        <p id="retorno">Esta e a sua mensagem!</p>
-    </main>
-
+    <script src="/js/script.js"></script>
 </body>
 </html>
