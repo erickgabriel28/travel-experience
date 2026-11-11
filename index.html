@@ -12,36 +12,46 @@
     <header>
         <h1>👕Loja de Roupas👚</h1>
     </header>
-    <main class="carrosel">
+    
+    <main class="area-contato">
+        
+        <form class="formulario">
+            <h2>Fale com a gente</h2>
+            <label for="nome">Nome:</label><br><br>
+            <input type="text" id="nome" placeholder="Digite seu nome" required minlength="3"><br><br>
+            <label for="email">E-mail</label><br><br>
+            <input type="email" id="email" placeholder="seu@email.com" required><br><br>
+            <label for="telefone">Telefone</label><br><br>
+            <input type="tel" id="telefone" placeholder="(51) 99999-9999"><br><br>
+            <label for="nascimento">Data de nasimento</label><br><br>
+            <input type="date" id="nascimento" required><br><br>
+            <label for="tamanho">Tamanho (numero de 34 a 46)</label><br><br>
+            <input type="number" id="tamanho" min="34" max="46" step="2" placeholder="ex: 38"><br><br>
+            <label for="produto">Produto de interesse</label>
+            <select id="produto" required>
+                <option value="">Escolha seu produto</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="calça">Calça</option>
+                <option value="jaqueta">Jaqueta</option>
+                <option value="Vestido">Vestido</option>
+            </select>
+            <fieldset>
+                <legend>Forma de contato preferida</legend>
+                <label><input type="radio" nome="contato" value="email" checked>email</label>
+                <label><input type="radio" nome="contato" value="telefone">Telefone</label>
+                <label><input type="radio" nome="contato" value="whatsapp">whatsapp</label>
+            </fieldset>
+            <fieldset>
+                <legend>Interesse</legend>
+                <label><input type="checkbox" nome="interesse" value="promocoes">promoções</label>
+                <label><input type="checkbox" nome="interesse" value="novidades">Novidades</label>
+                <label><input type="checkbox" nome="interesse" value="eventos">Eventos</label>
+            </fieldset>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Escreva sua duvida" maxlength="200"></textarea>
 
-        <div class="trilho">
-            
-            <div class="slide">
-                <img src="/IMG/camisa.webp" alt="Camisa azul">
-                <h2>Camiseta</h2>
-                <p class="preço">R$ 49,90</p>
-            </div>
-            <div class="slide">
-                <img src="/IMG/calça.webp" alt="Calça jeans">
-                <h2>Calça</h2>
-                <p class="preço">R$ 65,50</p>
-            </div>
-            <div class="slide">
-                <img src="/IMG/jaqueta.webp" alt="Jaqueta">
-                <h2>Jaqueta</h2>
-                <p class="Preço">R$ 70,99</p>
-            </div>
-            <div class="slide">
-                <img src="/IMG/tenis.webp" alt="Tênis esportivo">
-                <h2>Tênis</h2>
-                <p class="preço">R$159,99</p>
-            </div>
-            <div class="slide">
-                <img src="/IMG/vestido.webp" alt="Vestido">
-                <h2>Vestido lindinho do amorzinho</h2>
-                <p class="Preço">R$ 80,00</p>
-            </div>
-        </div>
+            <button type="submit">Enviar</button>
+        </form>
     </main>
 
 </body>
